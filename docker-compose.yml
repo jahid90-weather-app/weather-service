@@ -5,4 +5,6 @@ services:
         build: .
         image: weather
         container_name: weather
+        ports:
+            - 80:3000
 
