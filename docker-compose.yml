@@ -5,7 +5,13 @@ services:
         build: .
         image: weather
         container_name: weather
-        ports:
-            - 80:3000
-        env_file: config.env
+        env_file:
+            - config.env
+        environment:
+            - VIRTUAL_HOST=weather.jahiduls.io
+
+networks:
+    default:
+        external:
+           name: nginx-network
 
