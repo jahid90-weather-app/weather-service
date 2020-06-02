@@ -9,9 +9,6 @@ services:
             - config.env
         environment:
             - VIRTUAL_HOST=weather.jahiduls.io
-
-networks:
-    default:
-        external:
-           name: nginx-network
+        ports:
+            - 8080:3000
 
