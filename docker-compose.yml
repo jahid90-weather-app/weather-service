@@ -3,7 +3,7 @@ version: '3'
 services:
     weather:
         build: .
-        image: weather
+        image: weather:local
         container_name: weather
         env_file:
             - config.env
